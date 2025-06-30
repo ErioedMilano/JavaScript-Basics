@@ -7,8 +7,14 @@ body{
     font-size: 3em;
     padding: 5px 25px;
     border-radius: 5px;
+    background-color: #e62b2b;
+    color: white;
+    border-style: none;
+}
+#myButton:hover{
+    background-color: #b30606;
 }
 
-#myLabel{
+.myLabels{
     font-size: 3em;
 }
