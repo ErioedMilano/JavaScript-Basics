@@ -43,7 +43,7 @@ label {
     border-color: #f8f8fa;
     background-color: #6a6ab3;
     outline: none;
-    animation: glow 1.5s infinite alternate;
+    box-shadow: 0 4px 10px rgb(2, 39, 69);
 }
 #mySubmit:hover {
     background-color: #700000;
