@@ -11,8 +11,13 @@ let b = 2;
 let fruit = "Dog";
 let animal = "apple";
 
-const nums = [a,b] = [b,a]
-const strings = [fruit,animal] = [animal,fruit]
+const nums = [a,b] = [b,a];
+const strings = [fruit,animal] = [animal,fruit];
+
+const colors = ["Red","Green","Blue","Black","White"];
+[colors[0],colors[4]] = [colors[4],colors[0]];
+
+console.log(colors);
 
 console.log(a);
 console.log(b);
