@@ -47,6 +47,15 @@ const person2 = {
 //const {firstName,lastName,age,job} = person1;
 const {firstName,lastName,age,job = "Unemployed"} = person2;
 
+// ---------- EXAMPLE 5 ----------
+// DESTRUCTURING IN FUNCTION PARAMETERS
+
+function displayPerson({firstName,lastName,age,job}){
+    console.log(`name: ${firstName}, ${lastName}`);
+    console.log(`age: ${age}`);
+    console.log(`job: ${job}`);
+}
+
 
 console.log(a);
 console.log(b);
@@ -65,6 +74,8 @@ console.log(firstName);
 console.log(lastName);
 console.log(age);
 console.log(job);
+
+displayPerson(person1);
 
 
 
