@@ -7,6 +7,16 @@ const apiKey = "66cd743fc053a86433924ff6ca171fb5";
 
 weatherForm.addEventListener("submit", event =>{
 
+    event.preventDefault();
+
+    const city = cityInput.value;
+
+    if (city){
+
+    }
+    else {
+        displayError("Please Enter a city");
+    }
 });
 
 async function getWeatherData(city){
@@ -17,10 +27,17 @@ function displayWeatherInfo(data){
 
 }
 
-function getWeatherImoj(weatherId){
+function getWeatherEmoji(weatherId){
 
 }
 
 function displayError(message){
 
+    const errorDisplay = document.createElement("p");
+    errorDisplay.textContent = message;
+    errorDisplay.classList.add("errorDisplay");
+
+    card.textContent = "";
+    card.style.display = "flex";
+    card.appendChild(errorDisplay);
 }
